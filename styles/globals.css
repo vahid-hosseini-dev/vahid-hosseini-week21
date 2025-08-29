@@ -1,0 +1,19 @@
+@import "./fonts.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-yekan;
+}
+
+.inputClass {
+  @apply w-[400px] min-h-[53px] py-2 px-12 rounded-2xl bg-[rgba(242,242,242,1)] text-[rgba(40,40,40,0.5)] text-base text-right outline-none;
+}
+.formClass {
+  @apply flex flex-col items-center bg-white gap-1 p-10 w-[460px] min-h-[523px] border-[#E4E4E4] border rounded-3xl;
+}
+.btnClass {
+  @apply w-[400px] min-h-[53px] py-2 rounded-2xl cursor-pointer outline-none text-base text-white text-center mb-2 transform transition-transform duration-150 hover:ring-blue-600 active:scale-95 focus:ring-1 focus:ring-blue-600 focus:ring-offset-2;
+}
