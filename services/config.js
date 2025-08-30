@@ -18,16 +18,18 @@ api.interceptors.request.use(
   }
 );
 
-api.interceptors.response.use((response) => response);
-(error) => {
-  if (error.response) {
-    const status = error.response.status;
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response) {
+      const status = error.response.status;
 
-    if (status === 400 || status === 401 || status === 403) {
-      deleteCookie("token");
-      window.location.href = "login";
+      if (status === 400 || status === 401 || status === 403) {
+        deleteCookie("token");
+        window.location.href = "login";
+      }
+      return Promise.reject(error);
     }
-    return Promise.reject(error);
   }
-};
+);
 export default api;

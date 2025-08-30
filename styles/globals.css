@@ -15,5 +15,5 @@ body {
   @apply flex flex-col items-center bg-white gap-1 p-10 w-[460px] min-h-[523px] border-[#E4E4E4] border rounded-3xl;
 }
 .btnClass {
-  @apply w-[400px] min-h-[53px] py-2 rounded-2xl cursor-pointer outline-none text-base text-white text-center mb-2 transform transition-transform duration-150 hover:ring-blue-600 active:scale-95 focus:ring-1 focus:ring-blue-600 focus:ring-offset-2;
+  @apply bg-[rgba(85,163,240,1)] w-[400px] min-h-[53px] py-2 rounded-2xl cursor-pointer outline-none text-base text-white text-center mb-2 transform transition-transform duration-150 hover:ring-blue-600 active:scale-95 focus:ring-1 focus:ring-blue-600 focus:ring-offset-2;
 }

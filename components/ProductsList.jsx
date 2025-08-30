@@ -32,7 +32,7 @@ function ProductsList({
           <tr className="flex items-center text-right pr-10 pt-5">
             <th className="w-1/6">نام کالا</th>
             <th className="w-1/6">موجودی</th>
-            <th className="w-1/6">قیمت</th>
+            <th className="w-1/6">قیمت (تومان)</th>
             <th className="w-3/6">شناسه کالا</th>
           </tr>
         </thead>

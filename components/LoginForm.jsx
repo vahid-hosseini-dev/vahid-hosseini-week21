@@ -87,7 +87,7 @@ function RegistrationForm() {
         {errors.password?.message}
       </p>
 
-      <input type="submit" value="ورود" className="btnClass !bg-[rgba(85,163,240,1)]" />
+      <input type="submit" value="ورود" className="btnClass" />
       {toast ? (
         <Toast message={toast.message} type={toast.type} />
       ) : (

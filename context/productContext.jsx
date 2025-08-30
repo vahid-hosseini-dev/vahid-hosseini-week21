@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 
 const ProductContext = createContext();
 
@@ -12,4 +12,9 @@ function ProductProvider({ children }) {
   );
 }
 
-export { ProductProvider, ProductContext };
+const useProducts = () => {
+  const products = useContext(ProductContext);
+  return products;
+};
+
+export { ProductProvider, useProducts, ProductContext };

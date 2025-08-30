@@ -107,7 +107,7 @@ function AddModalForm({ setModalType }) {
         <div className="flex justify-around mt-5 gap-5">
           <input
             type="submit"
-            className="btnClass !bg-[rgba(85,163,240,1)] !w-[185px] !min-h-[42px]"
+            className="btnClass !w-[185px] !min-h-[42px]"
             value={"ایجاد"}
           />
 

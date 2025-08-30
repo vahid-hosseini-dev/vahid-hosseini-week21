@@ -113,7 +113,7 @@ function RegistrationForm() {
       </p>
 
       <input
-        className="btnClass cursor-pointer !bg-[rgba(85,163,240,1)] !text-center text-white mb-[10px]"
+        className="btnClass cursor-pointer !text-center text-white mb-[10px]"
         type="submit"
         value="ثبت نام"
       />
