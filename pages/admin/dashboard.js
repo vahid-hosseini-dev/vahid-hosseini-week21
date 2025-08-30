@@ -3,6 +3,26 @@ import ProductsList from "../../components/ProductsList";
 import Modal from "../../components/Modals/Modal";
 import { useState } from "react";
 
+import { parseCookies } from "nookies";
+
+const getServerSideProps = async (context) => {
+  const cookies = parseCookies(context);
+  const token = cookies.token || null;
+
+  if (!token) {
+    return {
+      redirect: {
+        destination: "/auth/login",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
+};
+
 const Dashboard = () => {
   const [modalType, setModalType] = useState({});
   const [selectProduct, setSelectProduct] = useState([]);
@@ -59,3 +79,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+export { getServerSideProps };

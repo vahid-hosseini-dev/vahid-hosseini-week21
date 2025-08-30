@@ -6,11 +6,11 @@ import { useContext, useEffect, useState } from "react";
 import { Toast } from "../Toast";
 import { useQueryClient } from "@tanstack/react-query";
 
-import { productContext } from "../../context/productContext";
+import { ProductContext } from "../../context/ProductContext";
 import { useRouter } from "next/router";
 
 function EditModalForm({ setModalType }) {
-  const { productInfo } = useContext(productContext);
+  const { productInfo } = useContext(ProductContext);
   const [toast, setToast] = useState(null);
   const queryClient = useQueryClient();
 

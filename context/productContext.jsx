@@ -1,15 +1,15 @@
 import { createContext, useState } from "react";
 
-const productContext = createContext();
+const ProductContext = createContext();
 
 function ProductProvider({ children }) {
   const [productInfo, setProductInfo] = useState({});
 
   return (
-    <productContext.Provider value={{productInfo, setProductInfo}}>
+    <ProductContext.Provider value={{ productInfo, setProductInfo }}>
       {children}
-    </productContext.Provider>
+    </ProductContext.Provider>
   );
 }
 
-export { ProductProvider, productContext };
+export { ProductProvider, ProductContext };

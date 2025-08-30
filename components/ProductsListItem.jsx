@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { productContext } from "../context/productContext";
+import { ProductContext } from "../context/ProductContext";
 
 function ProductsListItem({
   product,
@@ -8,7 +8,7 @@ function ProductsListItem({
   setSelectProduct,
   selectProduct,
 }) {
-  const { productInfo, setProductInfo } = useContext(productContext);
+  const { productInfo, setProductInfo } = useContext(ProductContext);
 
   const checkHandler = (e) => {
     if (e.target.checked) {

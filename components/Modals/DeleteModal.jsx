@@ -2,11 +2,11 @@ import api from "../../services/config";
 import { useContext, useState } from "react";
 import { Toast } from "../Toast";
 
-import { productContext } from "../../context/productContext";
+import { ProductContext } from "../../context/ProductContext";
 import { useRouter } from "next/router";
 
 function DeleteModal({ setModalType, selectProduct }) {
-  const { productInfo } = useContext(productContext);
+  const { productInfo } = useContext(ProductContext);
   console.log("Deleting product id:", productInfo.id);
 
   const [toast, setToast] = useState(null);
